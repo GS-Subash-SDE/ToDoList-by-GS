@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+
+.container {
+  /* background-color: red; */
+  width: 100dvw;
+  height: 100dvh;
+  padding: 0.4em 2em;
+}
+
+header h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 77.45px;
+  text-align: center;
+  /* background-color: aquamarine; */
+}
+
+#forms {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* background-color: orange; */
+  height: 40px;
+  gap: 10px;
+}
+
+#forms {
+  height: 100%;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+  text-align: center;
+  .inputs {
+    font-size: 18px;
+    padding-inline: 7px;
+    border: 2px solid black;
+  }
+  #itemName {
+    flex: 3;
+  }
+
+  #taskDate {
+    flex: 2;
+  }
+
+  #priority {
+    flex: 2;
+  }
+  button {
+    flex: 1;
+    color: #ffffff;
+    background-color: #000000;
+  }
+}
+
+.task-cont {
+  margin-bottom: 20px;
+  h2 {
+    margin-bottom: 26px;
+  }
+}
+
+.task-cont div {
+  width: 100%;
+  /* background-color: green; */
+  border-collapse: collapse;
+}
+.divs {
+  --tr-height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--tr-height);
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding-inline-start: 10px;
+  padding-inline-end: 12px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+
+  .edit-cont {
+    display: flex;
+    height: var(--tr-height);
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    /* background-color: orangered; */
+
+    .deleteBtn{
+      cursor: pointer;
+    }
+
+    .editBtn{
+      cursor: pointer;
+    }
+  }
+}
+
+.complete-container .divs{
+  color: black;
+  background-color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  .divs{
+    font-size: 12px
+  }
+
+  .editBtn,.deleteBtn{
+    font-size: 20px;
+    width: 20px;
+  }
+}
